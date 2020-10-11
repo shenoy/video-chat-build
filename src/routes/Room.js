@@ -136,6 +136,8 @@ const Room = (props) => {
 
   return (
     <div>
+      <h1>React WebRTC Video Chat</h1>
+      <h2>Share link above for 2nd user to join</h2>
       <video autoPlay ref={userVideo} />
       <video autoPlay ref={partnerVideo} />
     </div>
