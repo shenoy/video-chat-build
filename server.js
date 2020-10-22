@@ -100,6 +100,8 @@ io.on("connection", (socket) => {
     }
     delete users[socket.id];
     delete sockets[socket];
+  io.sockets.emit("allUsers", users);
+
 
     console.log(
       "USERS",
